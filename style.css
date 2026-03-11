@@ -1,7 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-header {
+:root {
+    --red: rgb(255, 0, 0);
+}
+
+html, body {
+    height: 100vh;
+    margin: 0px;
+}
+
+body {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-style: normal;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    background-color: rgb(29, 117, 29);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1fr;    
+    overflow-y: scroll;
+}
+
+main section {
+    border: 5px solid black;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+main section.image, .side {
+    height: fit-content;
+}
+
+footer {
+    display: grid;
+    background-color: rgb(44, 44, 44);
 }
