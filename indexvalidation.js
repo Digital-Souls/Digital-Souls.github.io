@@ -17,9 +17,13 @@ function hideDock() {
 // shows dock when the mouse hovers over the arrow
 toggleBtn.addEventListener("mouseenter", showDock);
 
+toggleBtn.addEventListener("click", showDock)
+
 document.addEventListener("click", closeDock);
 
 document.addEventListener("mouseout", closeDock);
+
+dock.addEventListener("mouseout", closeDock);
 
 // Closes the dock if focus is taken off of the dock
 function closeDock(event) {
@@ -30,11 +34,20 @@ function closeDock(event) {
 
 // Aligns the dock toggle to the middle of the dock
 function positionToggle() {
-    const dockRect = dock.getBoundingClientRect();
-    toggleBtn.style.top = `${dockRect.top + dockRect.height / 2 - toggleBtn.offsetHeight /2}px`;
+    if (!dock.classList.contains("top-dock")) {
+        const dockRect = dock.getBoundingClientRect();
+        toggleBtn.style.top = `${dockRect.top + dockRect.height / 2 - toggleBtn.offsetHeight /2}px`;
+    }
 }
 
 positionToggle();
 
 // Making sure the dock toggle is aligned even after resizing
 window.addEventListener("resize", positionToggle);
+
+let headerBtn = document.querySelector(".header_btn")
+let dropDown = document.querySelector(".drop_down");
+
+dropDown.addEventListener("click", () => {
+    dropDown.classList.add("active_info");
+})

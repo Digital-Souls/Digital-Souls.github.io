@@ -10,7 +10,7 @@ html, body {
     margin: 0px;
 }
 
-body {
+body, pre {
     font-family: "Roboto", sans-serif;
     display: grid;
     font-weight: bolder;
@@ -21,11 +21,11 @@ h3 {
     margin: 0;
 }
 
-p, li {
+p, li, pre {
     font-weight: normal;
 }
 
-p {
+p, pre {
     font-size: large;
 }
 
@@ -35,7 +35,45 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 15px;
-    background: linear-gradient(to bottom right,#23DBDE,#ffb834);
+    background: linear-gradient(to bottom right,#df8c66,#f8a50c);
+}
+
+.header {
+    color: whitesmoke
+}
+
+.drop_down {
+
+}
+
+.active_info {
+
+}
+
+.header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_btn button {
+    font-size: x-large;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 3px rgba(255, 216, 90, 0.315) dotted;
+    color: #a9cefc;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 16px #548DD4;
+}
+.header_btn button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header_btn a {
+    width: 80%;
+    height: 80%;
 }
 
 /*----------------------- Stuff within main -----------------------*/
@@ -111,6 +149,19 @@ a:active {
 .highschool {
     display: inline-flex;
     column-gap: 5em;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.skills h4 {
+    margin-bottom: 0.2px;
+    margin-top: 0.5em;
+}
+.skills ul {
+    margin-top: 0.2px;
 }
 
 /*----------------------- Dock for links -----------------------*/
