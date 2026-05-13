@@ -44,6 +44,17 @@ header {
     left: 2em;
 }
 
+
+
+
+.resume, .resume iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
 .return {
     display: flex;
     align-items: center;
