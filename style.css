@@ -38,8 +38,9 @@ header {
     background: linear-gradient(to bottom right,#df8c66,#f8a50c);
 }
 
-.header {
+.header h1 {
     color: whitesmoke
+    
 }
 
 .drop_down {
