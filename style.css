@@ -15,6 +15,7 @@ body, pre {
     display: grid;
     font-weight: bolder;
     grid-template-rows: auto 1fr auto;
+    background-color: #D5EEF8;
 }
 
 h3 {
