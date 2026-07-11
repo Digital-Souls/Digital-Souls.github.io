@@ -36,7 +36,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 15px;
-    background: linear-gradient(to bottom right,#df8c66,#f8a50c);
+    background: linear-gradient(112deg, rgba(35, 219, 222, 1) 0%, rgba(110, 149, 207, 1) 22%, rgba(143, 118, 201, 1) 52%, rgba(164, 130, 164, 1) 80%, rgba(240, 174, 31, 1) 100%);
 }
 
 .header h1 {
@@ -242,7 +242,8 @@ a:active {
 
 footer {
     display: grid;
-    background: linear-gradient(to bottom right,#ffb834,#23DBDE);
+    /* background: linear-gradient(to bottom right,#ffb834,#23DBDE); */
     grid-template-columns: 2fr 1fr;
     padding: 1em;
+    background: linear-gradient(112deg, rgba(35, 219, 222, 1) 0%, rgba(110, 149, 207, 1) 22%, rgba(143, 118, 201, 1) 52%, rgba(164, 130, 164, 1) 80%, rgba(240, 174, 31, 1) 100%);
 }
