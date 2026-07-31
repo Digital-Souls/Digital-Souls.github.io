@@ -45,9 +45,9 @@ positionToggle();
 // Making sure the dock toggle is aligned even after resizing
 window.addEventListener("resize", positionToggle);
 
-let headerBtn = document.querySelector(".header_btn")
-let dropDown = document.querySelector(".drop_down");
+// let headerBtn = document.querySelector(".header_btn")
+// let dropDown = document.querySelector(".drop_down");
 
-dropDown.addEventListener("click", () => {
-    dropDown.classList.add("active_info");
-})
+// dropDown.addEventListener("click", () => {
+//     dropDown.classList.add("active_info");
+// })

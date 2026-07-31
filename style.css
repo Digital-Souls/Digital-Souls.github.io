@@ -15,7 +15,7 @@ body, pre {
     display: grid;
     font-weight: bolder;
     grid-template-rows: auto 1fr auto;
-    background-color: #D5EEF8;
+    background-color: #D1EBF2;
 }
 
 h3 {
@@ -30,25 +30,54 @@ p, pre {
     font-size: large;
 }
 
+.custom_header {
+    padding-left: 8px;
+    border-left: solid rgb(149, 143, 143) 2px;
+    background-color: #b8e6f3c0;
+    box-shadow: 2px 5px 5px #b8e6f3c0, -2px -5px 5px #b8e6f3c0;
+}
+
 /*----------------------- Header -----------------------*/
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     padding: 15px;
     background: linear-gradient(112deg, rgba(35, 219, 222, 1) 0%, rgba(110, 149, 207, 1) 22%, rgba(143, 118, 201, 1) 52%, rgba(164, 130, 164, 1) 80%, rgba(240, 174, 31, 1) 100%);
+    height: 100px;
+}
+
+.logo {
+    flex: 1;
+    color: whitesmoke;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo_img {
+    padding-left: 20%;
+    max-width: 110%;
+    max-height: 110%;
 }
 
 .header h1 {
-    color: whitesmoke
-    
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(220, 227, 83, 0.347);
+    box-shadow: 2px 2px 50px 4px rgba(90, 22, 154, 0.348), -2px -2px 50px 4px rgba(220, 227, 83, 0.444);
+    border-radius: 20px;
 }
 
 .drop_down {
+    flex: 1;
+}
+
+.projects {
 
 }
 
-.active_info {
+.projects_table {
 
 }
 
@@ -56,7 +85,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
+
 .header_btn button {
     font-size: x-large;
     background: rgba(255, 255, 255, 0.15);
@@ -86,15 +117,11 @@ main {
 }
 
 main section {
-    border: 5px solid black;
+    border: 3px solid black;
     padding: 5px;
     margin: 20px;
     border-radius: 30px;
-}
-
-img {
-    width: available;
-    border-radius: 50px;
+    box-shadow: 5px 5px 20px -5px rgb(40, 181, 110);
 }
 
 main section.image, .side {
@@ -165,6 +192,11 @@ a:active {
 }
 .skills ul {
     margin-top: 0.2px;
+}
+
+.interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*----------------------- Dock for links -----------------------*/
