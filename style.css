@@ -18,7 +18,7 @@ body, pre {
     background-color: #D1EBF2;
 }
 
-h3 {
+.info h3 {
     margin: 0;
 }
 
@@ -124,7 +124,7 @@ main section {
     box-shadow: 5px 5px 20px -5px rgb(40, 181, 110);
 }
 
-main section.image, .side {
+main section.image {
     height: fit-content;
     display: grid;
     position: relative;
@@ -199,6 +199,16 @@ a:active {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.side {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.side h3 {
+    margin-left: 0;
+}
+
 /*----------------------- Dock for links -----------------------*/
 
 .dock-toggle {
@@ -206,8 +216,8 @@ a:active {
     right: 0;
     z-index: 110;
     cursor: pointer;
-    background-color: rgba(2, 66, 13, 0.5);
-    color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(98, 209, 118, 0.5);
+    color: rgba(0, 0, 0, 0.946);
     border: none;
     border-radius: 10px 0 0 10px;
     height: 10%;
