@@ -4,6 +4,17 @@
 let dock = document.querySelector(".dock");
 let toggleBtn = document.querySelector(".dock-toggle");
 
+const isTouch = window.matchMedia('(pointer: coarse)').matches;
+
+toggleBtn.addEventListener("click", showDock)
+document.addEventListener("click", closeDock);
+
+// shows dock when the mouse hovers over the arrow on desktop
+if(!isTouch) {
+    toggleBtn.addEventListener("mouseenter", showDock);
+    dock.addEventListener("mouseout", closeDock);
+}
+
 function showDock() {
     dock.classList.add("active");
     toggleBtn.style.display = "none";
@@ -14,22 +25,11 @@ function hideDock() {
     toggleBtn.style.display = "block";
 }
 
-// shows dock when the mouse hovers over the arrow
-toggleBtn.addEventListener("mouseenter", showDock);
-
-toggleBtn.addEventListener("click", showDock)
-
-document.addEventListener("click", closeDock);
-
-document.addEventListener("mouseout", closeDock);
-
-dock.addEventListener("mouseout", closeDock);
-
 // Closes the dock if focus is taken off of the dock
 function closeDock(event) {
     if (dock.classList.contains("active") && 
         !dock.contains(event.target) &&
-        event.target !== toggleBtn) hideDock();
+        !toggleBtn.contains(event.target)) hideDock();
 }
 
 // Aligns the dock toggle to the middle of the dock
