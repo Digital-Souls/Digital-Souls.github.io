@@ -47,6 +47,7 @@ header {
 .resume, .resume iframe{
     height: 100%;
     width: 100%;
+    overflow-x: scroll;
 }
 
 
@@ -142,14 +143,15 @@ header {
 }
 
 @media (max-width: 768px) {
-    .return_btn {
+    
+    .return {
       display: flex;
       align-items: center;
       justify-content: center;
       flex: 1;
     }
 
-    .return_btn button {
+    .return button {
         font-size: large;
         background: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(20px);
@@ -161,11 +163,11 @@ header {
         font-weight: bolder;
         text-shadow: 2px 2px 16px #548DD4;
     }
-    .eeturn_btn button:hover {
+    .return button:hover {
         background-color: rgba(0, 0, 0, 0.2);
     }
 
-    .return_btn a {
+    .return a {
         width: 60%;
         height: 60%;
     }
